@@ -352,6 +352,10 @@
     width: 100%;
     border: 1px solid var(--gray);
 }
+.form-container label select {
+	-webkit-appearance: menulist-button;
+    height: 38px;
+}
 .form-container {
 	margin: 0 -10px;
 	display: flex;
