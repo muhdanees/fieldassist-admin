@@ -1,0 +1,307 @@
+/* Logo of the website */
+.logo {
+	display: inline-block;
+    font-size: 1.1rem;
+    padding-left: 20px;
+    vertical-align: top;
+    padding-top: 9px;
+}
+.logo a {
+	color: var(--white);
+	height: 100%;
+	display: block;
+	text-decoration: none;
+}
+/* Top navigation of the website */
+
+.menu {
+	cursor: pointer;
+	font-size: 1.8rem;
+	color: var(--white);
+	display: inline-block;
+}
+
+.user-profile {
+	padding: 20px;
+	position: relative;
+	text-align: center;
+}
+.user-pic-edit {
+	background-color: var(--secondary);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+}
+.user-profile img {
+	width: 100%;
+	padding: 5px;
+	border-radius: 50%;
+	max-width: 90px;
+	border: 1px solid var(--blue);
+	margin-bottom: 10px;
+}
+.user-title {
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: var(--white);
+	line-height: normal;
+    margin-bottom: 5px;
+}
+.user-designation {
+	/* font-size: 1rem; */
+	font-weight: normal;
+	color: var(--anakiwa);
+}
+
+.dashboard-list {
+	padding: 0px;
+}
+.dashboard-list ul {
+	list-style: none;
+	padding: 0;
+}
+.dashboard-list ul li {
+	cursor: pointer;
+    line-height: 60px;
+    border-top: 1px solid var(--blue);
+    position: relative;
+	padding: 0 20px;
+	color: var(--anakiwa);
+}
+.dashboard-list ul li i {
+	margin-right: 10px;
+    width: 20px;
+}
+.dashboard-list ul li:first-child {
+	border-top: none;
+}
+.dashboard-list ul li.active {
+	color: var(--white);
+}
+.dashboard-list ul li.active::before, .dashboard-list ul li:hover::before {
+	position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    border-left: 3px solid var(--white);
+    height: 70%;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.copyright {
+	padding: 10px 20px;
+	color: var(--anakiwa);
+	font-size: .7rem;
+}
+
+.middle-header {
+	min-height: 62px;
+	background-color: var(--white);
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	justify-content: space-between;
+}
+.main-serch {
+	position: relative;
+	padding: 10px 20px;
+}
+.main-serch i {
+	position: absolute;
+	left: 21px; top: 19px;
+	font-size: 1.5rem;
+}
+.main-serch input { 
+	border: none;
+    margin-left: 50px;
+    font-size: 1rem;
+    line-height: 40px;
+	width: 100%;
+	color: var(--medium-dark);
+}
+.main-serch input:focus { outline: none;}
+.info-menu {
+	text-align: right;
+}
+.info-menu ul { list-style: none; margin: 0; padding: 0; }
+.info-menu ul li { font-size: 1.5rem; border-left: 1px solid var(--light); padding: 13px 20px; display: inline-block;}
+.info-menu a {
+	color: var(--gray);
+	position: relative;
+}
+.info-menu a:hover {
+	color: var(--medium-dark);
+}
+.info-menu span {
+	background-color: var(--red);
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: .8rem;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    color: var(--white);
+    line-height: 20px;
+    text-align: center;
+    font-weight: normal;
+}
+.container-head { padding: 20px; background-color: var(--light); }
+.container-head ul { 
+	margin: 0; padding: 0;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+.container-head ul li { padding: 0; font-size: 1rem;}
+
+.container-head ul li.currentdate { position: relative; font-size: 1.2rem;}
+
+.container-head ul li.currentdate::before, .container-head ul li.currentdate::after  {
+	position: absolute;
+	top: 3px;
+	left: -15px; 
+	right: auto;
+	content: '<';
+	font-size: 1rem;
+	color: var(--medium-dark);
+}
+.container-head ul li.currentdate::after {
+	right: -15px;
+	left: auto;
+	content: '>';
+}
+
+.addemp { cursor: pointer; color: var(--primary);}
+.addemp:hover { color: var(--grey);}
+.popup-information { display: none; background-color: var(--white); padding: 20px; }
+.popup-information h2 {
+	font-size: 1.5rem;
+}
+.hierarchy-section {
+	background-color: var(--primary);
+	padding: 20px;
+	padding-bottom: 10px;
+}
+
+
+.currentemployee {
+	border-top: 1px solid var(--blue);
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+.currentempinfo {
+	display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 280px;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: -15px;
+    background: var(--primary);
+    padding: 0 20px;
+}
+.currentempinfo > div { flex-grow: 2;}
+.currentempinfo > div.info { max-width: 165px; padding-top: 5px; }
+.currentempinfo img {
+	border-radius: 50%;
+	border: 1px solid var(--white);
+}
+.currentemployee::before, .currentemployee::after {
+	position: absolute;
+	top: 0;
+	content: '';
+	height: 50%;
+}
+.currentemployee::before {
+	border-left: 1px solid var(--blue);
+	left: 0;
+	right: auto;
+}
+.currentemployee::after {
+	border-right: 1px solid var(--blue);
+	right: 0;
+	left: auto;
+}
+.currentemployee img {
+	margin-bottom: 10px;
+}
+
+.user-menu { margin-bottom: 0px; }
+.user-menu ul { 
+	margin: 0; padding: 0;
+	list-style: none;
+	display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+	justify-content: space-between;
+	color: var(--anakiwa);
+}
+.user-menu ul li { border-radius: 15px; background-color: var(--primary-light); cursor: pointer; margin-bottom: 10px; }
+.user-menu ul li span {
+    padding: 0 20px;
+    line-height: 30px;
+	display: inline-block;
+}
+.user-menu ul li.active, .user-menu ul li:hover { 
+	background-color: var(--white);
+	color: var(--primary);
+}
+.hierarchy { padding: 0;}
+.hierarchy ul { 
+	padding: 0;  
+	margin: 0 -10px;
+	display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+.hierarchy ul li { 
+	margin-bottom: 20px;
+	list-style: none;
+	background-color: var(--white);
+	flex-grow: 1;
+	margin: 10px;
+}
+.hierarchy ul li .currentempinfo {
+	background-color: transparent;
+	margin-top: 0;
+	padding: 15px;
+	width: 100%;
+}
+.empfooterinfo {
+	padding: 15px;
+	border-top: 1px solid var(--light);
+}
+.emptitle {
+	color: var(--gray-dark);
+	margin-bottom: 5px;
+}
+.emp-designation {
+	color: var(--gray);
+}
+.empfooterinfo i {
+	color: var(--teal);
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
+.empfooterinfo strong {
+	font-weight: bold;
+	font-size: .9rem;
+}
+.empfooterinfo span {
+	font-size: 1rem;
+}

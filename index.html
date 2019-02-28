@@ -2,11 +2,254 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>:: FieldAssist Admin ::</title>
+    <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    hellow
+    
+    <div class="main-wrapper">
+        <div class="main-menu">
+            <div class="menu-header">
+                <div class="menu"><i class="fas fa-bars"></i></div>
+                <div class="logo"><a href="./">FieldAssist Admin</a></div>
+            </div>
+            <div class="user-profile">
+                <div class="user-pic-edit"><i class="fas fa-user-edit"></i></div>
+                <img src="images/female-thumb.jpg" title="" alt="" />
+                <div class="user-title">Michaele Cooper</div>
+                <span class="user-designation">HR Manager</span>
+            </div>
+            <div class="dashboard-list">
+                <ul>
+                    <li><i class="fas fa-th-large"></i> Dashboard </li>
+                    <li class="active"><i class="fas fa-users"></i> Admin & Employees </li>
+                    <li><i class="fas fa-file-alt"></i> Payroll Details </li>
+                    <li><i class="fas fa-info-circle"></i> Company Information </li>
+                    <li><i class="fas fa-cog"></i> Settings </li>
+                </ul>
+            </div>
+            <div class="footer-container">
+                <div class="copyright">© 2019 All Right Reserved.</div>
+            </div>
+        </div>
+
+        <!-- Middile Container : Start : here -->
+        <div class="main-container">
+            <div class="middle-header">
+                <div class="main-serch">
+                    <i class="fas fa-search"></i> <input type="text" placeholder="Search for anything..." />
+                </div>
+                <div class="info-menu">
+                    <ul>
+                        <li><a href="notifications"><i class="fas fa-bell"></i><span>4</span></a></li>
+                        <li><a href="informations"><i class="fas fa-question-circle"></i></a></li>
+                        <li><a href="emails"><i class="fas fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container-head">
+                <ul>
+                    <li>Last updated: 11:03 PM</li>
+                    <li class="currentdate">January, 2017</li>
+                    <li><div class="addemp" id="addemp"><i class="fas fa-plus-square"></i> <!-- <i class="fas fa-user"></i> --> Add Emploree</div></li>
+                </ul>
+            </div>
+            <div class="popup-information" id="addemployee">
+                <h2>Add Emploree</h2>
+            </div>
+            <div class="popup-information" id="editemployee">
+                <h2>Edit Emploree</h2>
+            </div>
+            <div class="hierarchy-section">
+                <div class="currentemployee">
+                    <div class="currentempinfo">
+                        <div>
+                            <img src="images/female-thumb.jpg" title="" alt="" />
+                        </div>
+                        <div class="info">
+                            <div class="user-title">Steve Morgan</div>
+                            <span class="user-designation">Chief Executive Officer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-menu">
+                    <ul>
+                        <li class="active"><span>Team Members</span></li>
+                        <li><span>Stats</span></li>
+                        <li><span>Calendar</span></li>
+                        <li><span>Compensation</span></li>
+                        <li><span>Talent & Performance</span></li>
+                        <li><span>Employee Reviews</span></li>
+                    </ul>
+                </div>
+                <div class="hierarchy">
+                    <ul>
+                        <li>
+                            <div class="currentempinfo">
+                                <div>
+                                    <img src="images/female-thumb.jpg" title="" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="emptitle">Ava Gonsalez</div>
+                                    <span class="emp-designation">Chief Data Officer</span>
+                                </div>
+                            </div>
+                            <!-- <div class="empfooterinfo">
+                                <i class="fas fa-users"></i> <strong>Managin: </strong> <span>4</span>
+                            </div> -->
+                        </li>
+                        <li>
+                            <div class="currentempinfo">
+                                <div>
+                                    <img src="images/female-thumb.jpg" title="" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="emptitle">Jake Lee</div>
+                                    <span class="emp-designation">Executive VP,  Sales & Market…</span>
+                                </div>
+                            </div>
+                            <div class="empfooterinfo">
+                                <i class="fas fa-users"></i> <strong>Managin: </strong> <span>4</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="currentempinfo">
+                                <div>
+                                    <img src="images/female-thumb.jpg" title="" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="emptitle">Joy Banks</div>
+                                    <span class="emp-designation">Chief Human Resources Offic…</span>
+                                </div>
+                            </div>
+                            <div class="empfooterinfo">
+                                <i class="fas fa-users"></i> <strong>Managin: </strong> <span>4</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="currentempinfo">
+                                <div>
+                                    <img src="images/female-thumb.jpg" title="" alt="">
+                                </div>
+                                <div class="info"> 
+                                    <div class="emptitle">Maximilian Schneider</div>
+                                    <span class="emp-designation">Chief Operating Officer</span>
+                                </div>
+                            </div>
+                            <div class="empfooterinfo">
+                                <i class="fas fa-users"></i> <strong>Managin: </strong> <span>4</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="currentempinfo">
+                                <div>
+                                    <img src="images/female-thumb.jpg" title="" alt="">
+                                </div>
+                                <div class="info"> 
+                                    <div class="emptitle">Oliver Reynolds</div>
+                                    <span class="emp-designation">Chief information Officer</span>
+                                </div>
+                            </div>
+                            <div class="empfooterinfo">
+                                <i class="fas fa-users"></i> <strong>Managin: </strong> <span>4</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="currentempinfo">
+                                <div>
+                                    <img src="images/female-thumb.jpg" title="" alt="">
+                                </div>
+                                <div class="info">   
+                                    <div class="emptitle">Olivia Price (C)</div>
+                                    <span class="emp-designation">Executive Assistant</span>
+                                </div>
+                            </div>
+                            <div class="empfooterinfo">
+                                <i class="fas fa-users"></i> <strong>Managin: </strong> <span>4</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="currentempinfo">
+                                <div>
+                                    <img src="images/female-thumb.jpg" title="" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="emptitle">Ava Gonsalez</div>
+                                    <span class="emp-designation">Chief Data Officer</span>
+                                </div>
+                            </div>
+                            <!-- <div class="empfooterinfo">
+                                <i class="fas fa-users"></i> <strong>Managin: </strong> <span>4</span>
+                            </div> -->
+                        </li>
+                        <li>
+                            <div class="currentempinfo">
+                                <div>
+                                    <img src="images/female-thumb.jpg" title="" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="emptitle">Jake Lee</div>
+                                    <span class="emp-designation">Executive VP,  Sales & Market…</span>
+                                </div>
+                            </div>
+                            <div class="empfooterinfo">
+                                <i class="fas fa-users"></i> <strong>Managin: </strong> <span>4</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="currentempinfo">
+                                <div>
+                                    <img src="images/female-thumb.jpg" title="" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="emptitle">Joy Banks</div>
+                                    <span class="emp-designation">Chief Human Resources Offic…</span>
+                                </div>
+                            </div>
+                            <div class="empfooterinfo">
+                                <i class="fas fa-users"></i> <strong>Managin: </strong> <span>4</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="currentempinfo">
+                                <div>
+                                    <img src="images/female-thumb.jpg" title="" alt="">
+                                </div>
+                                <div class="info"> 
+                                    <div class="emptitle">Maximilian Schneider</div>
+                                    <span class="emp-designation">Chief Operating Officer</span>
+                                </div>
+                            </div>
+                            <div class="empfooterinfo">
+                                <i class="fas fa-users"></i> <strong>Managin: </strong> <span>4</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Middile Container : End : here -->
+
+        
+        <div class="footer-container">
+            <div class="copyright">© 2019 FieldAssist Admin</div>
+        </div>
+
+    </div>
+
+
+
+    
+
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
 </html>
