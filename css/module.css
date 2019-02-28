@@ -39,6 +39,10 @@
 	line-height: 30px;
 	cursor: pointer;
 }
+.user-pic-edit:hover {
+	background-color: var(--white);
+	color: var(--primary);
+}
 .user-profile img {
 	width: 100%;
 	padding: 5px;
@@ -110,6 +114,9 @@
 	flex-wrap: wrap;
 	align-items: stretch;
 	justify-content: space-between;
+	position: sticky;
+    top: 0;
+    z-index: 99;
 }
 .main-serch {
 	position: relative;
@@ -195,7 +202,9 @@
 	padding: 20px;
 	padding-bottom: 10px;
 }
-
+.hierarchy-section .tabs-container {
+	padding-top: 10px;
+}
 
 .currentemployee {
 	border-top: 1px solid var(--blue);
@@ -206,23 +215,40 @@
 	margin-bottom: 10px;
 }
 .currentempinfo {
-	display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
     width: 300px;
     margin: auto;
-    justify-content: space-between;
     margin-top: -15px;
     background: var(--primary);
     padding: 0 20px;
     position: relative;
     padding-right: 50px;
 }
-.currentempinfo > div { flex-grow: 2;}
-.currentempinfo > div.info { max-width: 165px; padding-top: 5px; }
+.currentempinfo > div { 
+	display: inline-block;
+    vertical-align: top;
+}
+.currentempinfo > div.info { 
+	max-width: 190px;
+    padding-top: 6px;
+    padding-left: 15px;
+}
 .currentempinfo img {
 	border-radius: 50%;
 	border: 1px solid var(--white);
+}
+.bookmark-group {
+	position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.4rem;
+    color: var(--gray);
+}
+.bookmark-group i:hover {
+	color: var(--secondary);
+	cursor: pointer;
+}
+.bookmark-group i {
+	margin-left: 10px;
 }
 .currentemployee::before, .currentemployee::after {
 	position: absolute;
@@ -254,7 +280,7 @@
 	justify-content: space-between;
 	color: var(--anakiwa);
 }
-.user-menu ul li { border-radius: 15px; background-color: var(--primary-light); cursor: pointer; margin-bottom: 10px; }
+.user-menu ul li { border-radius: 15px; background-color: var(--secondary); cursor: pointer; margin-bottom: 10px; }
 .user-menu ul li span {
     padding: 0 20px;
     line-height: 30px;
@@ -268,6 +294,7 @@
 .hierarchy ul { 
 	padding: 0;  
 	margin: 0 -10px;
+	margin-top: -10px;
 	display: flex;
     flex-wrap: wrap;
     align-items: stretch;
@@ -279,6 +306,8 @@
 	background-color: var(--white);
 	flex-grow: 1;
 	margin: 10px;
+	flex: 0 0 31%;
+    max-width: 31%;
 }
 .hierarchy ul li .currentempinfo {
 	background-color: transparent;
@@ -292,10 +321,12 @@
 }
 .emptitle {
 	color: var(--gray-dark);
-	margin-bottom: 5px;
+	margin-bottom: 0px;
+	font-size: 1.1rem;
 }
 .emp-designation {
-	color: var(--gray);
+	color: var(--gray-dark);
+	opacity: .6;
 }
 .empfooterinfo i {
 	color: var(--teal);
@@ -333,3 +364,85 @@
 	margin: 0 10px;
 }
 .form-container .rows label { display: block;}
+
+.select-custom {
+	border-radius: 4px;
+    padding: 8px 10px;
+    width: 100%;
+	border: 1px solid var(--gray);
+	display: inline-block;
+}
+
+.select-custom select {
+	padding: 0!important;
+    border: 0!important;
+	background: transparent;
+}
+
+.select-custom select:focus {
+	outline: none;
+}
+.text-right {
+	text-align: right;
+}
+.text-center {
+	text-align: center;
+}
+.text-left {
+	text-align: left;
+}
+.btn-align-middle {
+	vertical-align: middle !important;
+	padding-top: 20px;
+}
+button.btn, .btn {
+	cursor: pointer;
+	border-radius: 4px;
+	border: none;
+	line-height: 40px;
+	padding: 0 15px;
+	margin: 0 5px;
+	min-width: 90px;
+}
+button.btn:hover, .btn:hover {
+	background-color: var(--primary);
+	color: var(--white);
+}
+.btn-light {
+	background-color: var(--gray);
+}
+.btn-primary {
+	background-color: var(--secondary);
+	color: var(--white);
+}
+
+.data-awaited {
+	/* margin-top: 10px; */
+	background-color: var(--white);
+    padding: 20px;
+    min-height: 400px;
+}
+.notfound {
+	padding: 5px 10px;
+    border: 1px solid var(--pink);
+    color: var(--white);
+    border-radius: 4px;
+    /* padding: 20px; */
+    color: var(--red);
+    font-size: 1rem;
+    margin: 0 auto;
+    display: inline-block;
+    width: 100%;
+    min-height: 110px;
+    text-align: center;
+    padding-top: 40px;
+    opacity: .6;
+}
+
+
+@media (min-width:768px) and (max-width: 1200px) {
+	.hierarchy ul li {
+		flex: 0 0 45.5%;
+		max-width: 45.5%;
+	}
+}

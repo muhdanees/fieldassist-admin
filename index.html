@@ -11,7 +11,6 @@
 </head>
 <body>
     
-    
     <div class="main-wrapper">
         <div class="main-menu">
             <div class="menu-header">
@@ -25,7 +24,7 @@
                 <span class="user-designation">HR Manager</span>
             </div>
             <div class="dashboard-list tab-list">
-                <ul>
+                <ul data-target="outerTab">
                     <li><i class="fas fa-th-large"></i> Dashboard </li>
                     <li class="active"><i class="fas fa-users"></i> Admin & Employees </li>
                     <li><i class="fas fa-file-alt"></i> Payroll Details </li>
@@ -56,57 +55,69 @@
                 <ul>
                     <li>Last updated: 11:03 PM</li>
                     <li class="currentdate">January, 2017</li>
-                    <li><div class="addemp" id="addemp"><i class="fas fa-plus-square"></i> <!-- <i class="fas fa-user"></i> --> Add Emploree</div></li>
+                    <li><div class="addemp" id="addemp"><i class="fas fa-plus-square"></i> <!-- <i class="fas fa-user"></i> --> Add Employee</div></li>
                 </ul>
             </div>
-            <div class="tabs-container">
-                <div class="tab-content">1</div>
+            <div class="tabs-container" data-action="outerTab">
+                <div class="tab-content">
+                    <div class="data-awaited">
+                        <span class="notfound">Dashboard Awaited</span>
+                    </div>  
+                </div>
                 <div class="tab-content active">
-                    <div class="popup-information active" id="addemployee">
-                        <h2>Add Emploree</h2>
+                    <div class="popup-information" id="addemployee">
+                        <h2>Add Employee</h2>
                         <div class="form-container">
                             <div class="rows">
                                 <label>
                                     <strong>Employee Name: </strong>
-                                    <input type="text" name="name" id="name" />
+                                    <input placeholder="Type Name" type="text" name="name" id="name" />
                                 </label>
                             </div>
                             <div class="rows">
                                 <label>
                                     <strong>Email: </strong>
-                                    <input type="email" name="email" id="email" />
+                                    <input placeholder="Type Email" type="email" name="email" id="email" />
                                 </label>
                             </div>
                             <div class="rows">
                                 <label>
                                     <strong>Phone: </strong>
-                                    <input type="tel" name="phone" id="phone" />
+                                    <input placeholder="Type Phone" type="tel" name="phone" id="phone" />
                                 </label>
                             </div>
                             <div class="rows">
                                 <label>
                                     <strong>Head Quarter: </strong>
-                                    <select>
-                                        <option>USA</option>
-                                        <option>Gurugram</option>
-                                        <option>Noida</option>
-                                    </select>
+                                    <span class="select-custom">
+                                        <select>
+                                            <option>USA</option>
+                                            <option>Gurugram</option>
+                                            <option>Noida</option>
+                                        </select>
+                                    </span>
                                 </label>
                             </div>
                             <div class="rows">
                                 <label>
                                     <strong>Manager: </strong>
-                                    <select>
-                                        <option>Jatin kumar</option>
-                                        <option>Shaurabh</option>
-                                        <option>Nitin Yadav</option>
-                                    </select>
+                                    <span class="select-custom">
+                                        <select>
+                                            <option>Jatin kumar</option>
+                                            <option>Shaurabh</option>
+                                            <option>Nitin Yadav</option>
+                                        </select>
+                                    </span>
                                 </label>
+                            </div>
+                            <div class="rows text-right btn-align-middle">
+                                <button type="button" class="btn btn-light cancel">Cancel</button>
+                                <button type="button" class="btn btn-primary">Save</button>
                             </div>
                         </div>
                     </div>
-                    <div class="popup-information active" id="editEmployee">
-                        <h2>Edit Emploree</h2>
+                    <div class="popup-information" id="editEmployee">
+                        <h2>Edit Employee</h2>
                     </div>
                     <div class="hierarchy-section">
                         <div class="currentemployee">
@@ -122,7 +133,7 @@
                             </div>
                         </div>
                         <div class="user-menu tab-list">
-                            <ul>
+                            <ul data-target="innerTab">
                                 <li class="active"><span>Team Members</span></li>
                                 <li><span>Stats</span></li>
                                 <li><span>Calendar</span></li>
@@ -131,12 +142,16 @@
                                 <li><span>Employee Reviews</span></li>
                             </ul>
                         </div>
-                        <div class="tabs-container">
+                        <div class="tabs-container" data-action="innerTab">
                             <div class="tab-content active">
                                 <div class="hierarchy">
                                     <ul>
                                         <li>
                                             <div class="currentempinfo">
+                                                <div class="bookmark-group">
+                                                    <i class="fas fa-ellipsis-h"></i>
+                                                    <i class="far fa-bookmark"></i>
+                                                </div>
                                                 <div>
                                                     <img src="images/female-thumb.jpg" title="" alt="">
                                                 </div>
@@ -151,6 +166,10 @@
                                         </li>
                                         <li>
                                             <div class="currentempinfo">
+                                                <div class="bookmark-group">
+                                                    <i class="fas fa-ellipsis-h"></i>
+                                                    <i class="far fa-bookmark"></i>
+                                                </div>
                                                 <div>
                                                     <img src="images/female-thumb.jpg" title="" alt="">
                                                 </div>
@@ -165,6 +184,10 @@
                                         </li>
                                         <li>
                                             <div class="currentempinfo">
+                                                <div class="bookmark-group">
+                                                    <i class="fas fa-ellipsis-h"></i>
+                                                    <i class="far fa-bookmark"></i>
+                                                </div>
                                                 <div>
                                                     <img src="images/female-thumb.jpg" title="" alt="">
                                                 </div>
@@ -179,6 +202,10 @@
                                         </li>
                                         <li>
                                             <div class="currentempinfo">
+                                                <div class="bookmark-group">
+                                                    <i class="fas fa-ellipsis-h"></i>
+                                                    <i class="far fa-bookmark"></i>
+                                                </div>
                                                 <div>
                                                     <img src="images/female-thumb.jpg" title="" alt="">
                                                 </div>
@@ -193,6 +220,10 @@
                                         </li>
                                         <li>
                                             <div class="currentempinfo">
+                                                <div class="bookmark-group">
+                                                    <i class="fas fa-ellipsis-h"></i>
+                                                    <i class="far fa-bookmark"></i>
+                                                </div>
                                                 <div>
                                                     <img src="images/female-thumb.jpg" title="" alt="">
                                                 </div>
@@ -207,6 +238,10 @@
                                         </li>
                                         <li>
                                             <div class="currentempinfo">
+                                                <div class="bookmark-group">
+                                                    <i class="fas fa-ellipsis-h"></i>
+                                                    <i class="far fa-bookmark"></i>
+                                                </div>
                                                 <div>
                                                     <img src="images/female-thumb.jpg" title="" alt="">
                                                 </div>
@@ -221,6 +256,10 @@
                                         </li>
                                         <li>
                                             <div class="currentempinfo">
+                                                <div class="bookmark-group">
+                                                    <i class="fas fa-ellipsis-h"></i>
+                                                    <i class="far fa-bookmark"></i>
+                                                </div>
                                                 <div>
                                                     <img src="images/female-thumb.jpg" title="" alt="">
                                                 </div>
@@ -235,6 +274,10 @@
                                         </li>
                                         <li>
                                             <div class="currentempinfo">
+                                                <div class="bookmark-group">
+                                                    <i class="fas fa-ellipsis-h"></i>
+                                                    <i class="far fa-bookmark"></i>
+                                                </div>
                                                 <div>
                                                     <img src="images/female-thumb.jpg" title="" alt="">
                                                 </div>
@@ -249,6 +292,10 @@
                                         </li>
                                         <li>
                                             <div class="currentempinfo">
+                                                <div class="bookmark-group">
+                                                    <i class="fas fa-ellipsis-h"></i>
+                                                    <i class="far fa-bookmark"></i>
+                                                </div>
                                                 <div>
                                                     <img src="images/female-thumb.jpg" title="" alt="">
                                                 </div>
@@ -263,6 +310,10 @@
                                         </li>
                                         <li>
                                             <div class="currentempinfo">
+                                                <div class="bookmark-group">
+                                                    <i class="fas fa-ellipsis-h"></i>
+                                                    <i class="far fa-bookmark"></i>
+                                                </div>
                                                 <div>
                                                     <img src="images/female-thumb.jpg" title="" alt="">
                                                 </div>
@@ -278,39 +329,59 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="tab-content">2</div>
-                            <div class="tab-content">3</div>
-                            <div class="tab-content">4</div>
-                            <div class="tab-content">5</div>
-                            <div class="tab-content">6</div>
+                            <div class="tab-content">
+                                <div class="data-awaited">
+                                    <span class="notfound">States Awaited</span>
+                                </div>
+                            </div>
+                            <div class="tab-content">
+                                <div class="data-awaited">
+                                    <span class="notfound">Calendar Awaited</span>
+                                </div>
+                            </div>
+                            <div class="tab-content">
+                                <div class="data-awaited">
+                                    <span class="notfound">Compensation Awaited</span>
+                                </div>
+                            </div>
+                            <div class="tab-content">
+                                <div class="data-awaited">
+                                    <span class="notfound">Talent & Performance Awaited</span>
+                                </div>
+                            </div>
+                            <div class="tab-content">
+                                <div class="data-awaited">
+                                    <span class="notfound">Employee Reviews Awaited</span>
+                                </div>
+                            </div>
                         </div>
                         
                     </div>
                 </div>
-                <div class="tab-content">3</div>
-                <div class="tab-content">4</div>
-                <div class="tab-content">5</div>
+                <div class="tab-content">
+                    <div class="data-awaited">
+                        <span class="notfound">Payroll Details Awaited</span>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div class="data-awaited">
+                        <span class="notfound">Company Information Awaited</span>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div class="data-awaited">
+                        <span class="notfound">Settings Awaited</span>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- Middile Container : End : here -->
     
-        
         <div class="footer-container">
             <div class="copyright">© 2019 FieldAssist Admin</div>
         </div>
     
     </div>
-
-
-
-    
-
-
-
-    
-
-
-    
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="js/main.js"></script>

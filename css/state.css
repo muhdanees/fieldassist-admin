@@ -1,5 +1,5 @@
 
 /* Tabs Module */
-.tab-content { min-height: 500px; display: none; }
+.tab-content { min-height: 410px; display: none; }
 .tab-content.active { display: block; }
 .active { display: block; }
