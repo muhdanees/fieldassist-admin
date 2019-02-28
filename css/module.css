@@ -28,6 +28,7 @@
 }
 .user-pic-edit {
 	background-color: var(--secondary);
+	color: var(--white);
     position: absolute;
     top: 10px;
     right: 10px;
@@ -76,7 +77,8 @@
 }
 .dashboard-list ul li i {
 	margin-right: 10px;
-    width: 20px;
+    width: 29px;
+    font-size: 1.2rem;
 }
 .dashboard-list ul li:first-child {
 	border-top: none;
@@ -207,12 +209,14 @@
 	display: flex;
     flex-wrap: wrap;
     align-items: stretch;
-    width: 280px;
+    width: 300px;
     margin: auto;
     justify-content: space-between;
     margin-top: -15px;
     background: var(--primary);
     padding: 0 20px;
+    position: relative;
+    padding-right: 50px;
 }
 .currentempinfo > div { flex-grow: 2;}
 .currentempinfo > div.info { max-width: 165px; padding-top: 5px; }
@@ -305,3 +309,27 @@
 .empfooterinfo span {
 	font-size: 1rem;
 }
+
+
+.form-container label strong {
+	margin-bottom: 5px;
+    display: inline-block;
+}
+.form-container label input, .form-container label select {
+	border-radius: 4px;
+    padding: 8px 10px;
+    width: 100%;
+    border: 1px solid var(--gray);
+}
+.form-container {
+	margin: 0 -10px;
+	display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+.form-container .rows {
+	flex-grow: 1;
+	margin: 0 10px;
+}
+.form-container .rows label { display: block;}
